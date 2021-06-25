@@ -1,0 +1,1212 @@
+local PrisonLife = Instance.new("ScreenGui")
+local TheUniverse = Instance.new("Frame")
+local CoolThings = Instance.new("Frame")
+local KillAll = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local QuickEscape = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local ArrestPlr = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local KillPlr = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local RemoveDoor = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local BeInmate = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local BeGuard = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local BeCriminal = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local BeNeutral = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local InvGuns = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local PlayerNameBox = Instance.new("TextBox")
+local UICorner_11 = Instance.new("UICorner")
+local Credits = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local IDK = Instance.new("TextLabel")
+local IDK2 = Instance.new("TextLabel")
+local IDK3 = Instance.new("TextLabel")
+local IDK4 = Instance.new("TextLabel")
+local Guns = Instance.new("Frame")
+local GetAK47 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local GetShotgun = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local GetM4A1 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local GetM9 = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local GetKnife = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local ListFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local LocalPlayer = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local NoclipE = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Infjump = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Btools = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local SuperPunch = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local GOD = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local ClickTP = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Soon = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Soon_2 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Soon_3 = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Soon_4 = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local Soon_5 = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local Soon_6 = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local ClickTP_2 = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Visuals = Instance.new("Frame")
+local ESP = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local CoolThingsButton = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local CreditsButton = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local GunsButton = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local LocalPlayerButton = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local VisualButton = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_38 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_39 = Instance.new("UICorner")
+local DRAG = Instance.new("Frame")
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = game.CoreGui
+
+TheUniverse.Name = "TheUniverse"
+TheUniverse.Parent = PrisonLife
+TheUniverse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TheUniverse.BackgroundTransparency = 1.000
+TheUniverse.Position = UDim2.new(0.495388657, 0, 0.329341322, 0)
+TheUniverse.Size = UDim2.new(0.424242437, 0, 0.608782411, 0)
+
+CoolThings.Name = "CoolThings"
+CoolThings.Parent = TheUniverse
+CoolThings.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+CoolThings.Position = UDim2.new(0.358230621, 0, 0.150970012, 0)
+CoolThings.Size = UDim2.new(0.601001561, 0, 0.71400243, 0)
+CoolThings.Visible = false
+
+KillAll.Name = "KillAll"
+KillAll.Parent = CoolThings
+KillAll.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+KillAll.Position = UDim2.new(0.0406907797, 0, 0.0255749896, 0)
+KillAll.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+KillAll.Font = Enum.Font.Ubuntu
+KillAll.Text = "Kill All"
+KillAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAll.TextScaled = true
+KillAll.TextSize = 14.000
+KillAll.TextWrapped = true
+KillAll.MouseButton1Down:connect(function()
+
+	workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+
+	game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)	
+
+	wait(0.5)
+	function kill(a)
+		local A_1 =
+			{
+				[1] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-391.152252, 8.65560055, -83.2166901)),
+					["Distance"] = 3.2524313926697,
+					["Cframe"] = CFrame.new(840.310791, 101.334137, 2267.87988, 0.0636406094, 0.151434347, -0.986416459, 0, 0.988420188, 0.151741937, 0.997972965, -0.00965694897, 0.0629036576),
+					["Hit"] = a.Character.Head
+				},
+				[2] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-392.481476, -8.44939327, -76.7261353)),
+					["Distance"] = 3.2699294090271,
+					["Cframe"] = CFrame.new(840.290466, 101.184189, 2267.93506, 0.0964837447, 0.0589403138, -0.993587971, 4.65661287e-10, 0.998245299, 0.0592165813, 0.995334625, -0.00571343815, 0.0963144377),
+					["Hit"] = a.Character.Head
+				},
+				[3] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-389.21701, -2.50536323, -92.2163162)),
+					["Distance"] = 3.1665518283844,
+					["Cframe"] = CFrame.new(840.338867, 101.236496, 2267.80371, 0.0166504811, 0.0941716284, -0.995416701, 1.16415322e-10, 0.995554805, 0.0941846818, 0.999861419, -0.00156822044, 0.0165764652),
+					["Hit"] = a.Character.Head
+				},
+				[4] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-393.353973, 3.13988972, -72.5452042)),
+					["Distance"] = 3.3218522071838,
+					["Cframe"] = CFrame.new(840.277222, 101.285957, 2267.9707, 0.117109694, 0.118740402, -0.985994935, -1.86264515e-09, 0.992826641, 0.119563118, 0.993119001, -0.0140019981, 0.116269611),
+					["Hit"] = a.Character.Head
+				},
+				[5] =
+				{
+					["RayObject"] = Ray.new(Vector3.new(845.555908, 101.429337, 2269.43945), Vector3.new(-390.73172, 3.2097764, -85.5477524)),
+					["Distance"] = 3.222757101059,
+					["Cframe"] = CFrame.new(840.317993, 101.286423, 2267.86035, 0.0517584644, 0.123365127, -0.991010666, 0, 0.992340803, 0.123530701, 0.99865967, -0.00639375951, 0.0513620302),
+					["Hit"] = a.Character.Head
+				}
+			}
+		local A_2 = game.Players.LocalPlayer.Backpack["Remington 870"]
+		local Event = game:GetService("ReplicatedStorage").ShootEvent
+		Event:FireServer(A_1, A_2)
+		Event:FireServer(A_1, A_2)
+	end
+
+	for i,v in pairs(game.Players:GetChildren())do
+		if v.Name ~= game.Players.LocalPlayer.Name then
+			kill(v)
+		end
+	end
+	wait(1)
+	workspace.Remote.TeamEvent:FireServer("Bright orange")
+
+end)
+
+UICorner.Parent = KillAll
+
+QuickEscape.Name = "QuickEscape"
+QuickEscape.Parent = CoolThings
+QuickEscape.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+QuickEscape.Position = UDim2.new(0.533076584, 0, 0.0255749896, 0)
+QuickEscape.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+QuickEscape.Font = Enum.Font.Ubuntu
+QuickEscape.Text = "Quick Escape"
+QuickEscape.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuickEscape.TextScaled = true
+QuickEscape.TextSize = 14.000
+QuickEscape.TextWrapped = true
+QuickEscape.MouseButton1Click:connect(function()
+	if mousein == false then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(283, 72, 2213)
+	end
+end)
+
+UICorner_2.Parent = QuickEscape
+
+ArrestPlr.Name = "ArrestPlr"
+ArrestPlr.Parent = CoolThings
+ArrestPlr.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ArrestPlr.Position = UDim2.new(0.0406908095, 0, 0.184867024, 0)
+ArrestPlr.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+ArrestPlr.Font = Enum.Font.Ubuntu
+ArrestPlr.Text = "Arrest Player"
+ArrestPlr.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArrestPlr.TextScaled = true
+ArrestPlr.TextSize = 14.000
+ArrestPlr.TextWrapped = true
+ArrestPlr.MouseButton1Down:connect(function()
+	if mousein == false then
+		local target
+		if sn(PlayerNameBox.Text) ~= nil then
+			target = game.Players:FindFirstChild(SN(PlayerNameBox.Text))
+		end
+		
+	end
+end)
+
+UICorner_3.Parent = ArrestPlr
+
+KillPlr.Name = "KillPlr"
+KillPlr.Parent = CoolThings
+KillPlr.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+KillPlr.Position = UDim2.new(0.533076584, 0, 0.184867024, 0)
+KillPlr.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+KillPlr.Font = Enum.Font.Ubuntu
+KillPlr.Text = "Kill Player"
+KillPlr.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillPlr.TextScaled = true
+KillPlr.TextSize = 14.000
+KillPlr.TextWrapped = true
+KillPlr.MouseButton1Down:connect(function()
+	if mousein == false then
+		local target
+		if SN(PlayerNameBox.Text) ~= nil then
+			target = game.Players:FindFirstChild(SN(PlayerNameBox.Text))
+		end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		if target ~= nil then
+			local Player = game.Players.LocalPlayer
+			for i,v in pairs(game.Players:GetChildren()) do
+				if v.Name == target.Name then
+					if not v.Character:FindFirstChild("ForceField") then
+
+						local PlayerToKill = game.Players:FindFirstChild(target.Name)
+						local prevCFrame = Player.Character.HumanoidRootPart.CFrame
+
+
+						repeat
+							Player.Character.HumanoidRootPart.CFrame = PlayerToKill.Character.HumanoidRootPart.CFrame
+							for h = 1,10 do
+								game.ReplicatedStorage.meleeEvent:FireServer(PlayerToKill)
+							end
+							wait()
+						until PlayerToKill.Character.Humanoid.Health == 0 or v == nil
+						wait()
+						Player.Character.HumanoidRootPart.CFrame = prevCFrame
+					end
+				end
+			end
+		else
+			Notify("Error", "Player isnt in game.", "Ok.")  
+		end
+	end
+end)
+
+UICorner_4.Parent = KillPlr
+
+RemoveDoor.Name = "RemoveDoor"
+RemoveDoor.Parent = CoolThings
+RemoveDoor.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+RemoveDoor.Position = UDim2.new(0.0406908095, 0, 0.353008628, 0)
+RemoveDoor.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+RemoveDoor.Font = Enum.Font.Ubuntu
+RemoveDoor.Text = "Remove Doors"
+RemoveDoor.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveDoor.TextScaled = true
+RemoveDoor.TextSize = 14.000
+RemoveDoor.TextWrapped = true
+RemoveDoor.MouseButton1Down:connect(function()
+	Workspace.Prison_Cellblock.doors:Destroy()
+
+	for i,v in pairs(workspace:GetChildren())do
+		if v.Name == "Doors" then
+			v:Destroy()
+		end
+	end
+end)
+
+
+UICorner_5.Parent = RemoveDoor
+
+BeInmate.Name = "BeInmate"
+BeInmate.Parent = CoolThings
+BeInmate.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+BeInmate.Position = UDim2.new(0.538152695, 0, 0.353008628, 0)
+BeInmate.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+BeInmate.Font = Enum.Font.Ubuntu
+BeInmate.Text = "Be Inmate"
+BeInmate.TextColor3 = Color3.fromRGB(255, 255, 255)
+BeInmate.TextScaled = true
+BeInmate.TextSize = 14.000
+BeInmate.TextWrapped = true
+BeInmate.MouseButton1Down:connect(function()
+	Workspace.Remote.TeamEvent:FireServer("Bright orange")
+end)
+
+UICorner_6.Parent = BeInmate
+
+BeGuard.Name = "BeGuard"
+BeGuard.Parent = CoolThings
+BeGuard.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+BeGuard.Position = UDim2.new(0.0406907797, 0, 0.503451109, 0)
+BeGuard.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+BeGuard.Font = Enum.Font.Ubuntu
+BeGuard.Text = "Be Guard"
+BeGuard.TextColor3 = Color3.fromRGB(255, 255, 255)
+BeGuard.TextScaled = true
+BeGuard.TextSize = 14.000
+BeGuard.TextWrapped = true
+BeGuard.MouseButton1Down:connect(function()
+	Workspace.Remote.TeamEvent:FireServer("Bright blue")
+end)
+
+UICorner_7.Parent = BeGuard
+
+BeCriminal.Name = "BeCriminal"
+BeCriminal.Parent = CoolThings
+BeCriminal.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+BeCriminal.Position = UDim2.new(0.533076525, 0, 0.503451109, 0)
+BeCriminal.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+BeCriminal.Font = Enum.Font.Ubuntu
+BeCriminal.Text = "Be Criminal"
+BeCriminal.TextColor3 = Color3.fromRGB(255, 255, 255)
+BeCriminal.TextScaled = true
+BeCriminal.TextSize = 14.000
+BeCriminal.TextWrapped = true
+BeCriminal.MouseButton1Down:connect(function()
+	LCS = game.Workspace["Criminals Spawn"].SpawnLocation
+
+	LCS.CanCollide = false
+	LCS.Size = Vector3.new(51.05, 24.12, 54.76)
+	LCS.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	LCS.Transparency = 1
+	wait(0.5)
+	LCS.CFrame = CFrame.new(-920.510803, 92.2271957, 2138.27002, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+	LCS.Size = Vector3.new(6, 0.2, 6)
+	LCS.Transparency = 0
+end)
+
+UICorner_8.Parent = BeCriminal
+
+BeNeutral.Name = "BeNeutral"
+BeNeutral.Parent = CoolThings
+BeNeutral.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+BeNeutral.Position = UDim2.new(0.0406907499, 0, 0.65389359, 0)
+BeNeutral.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+BeNeutral.Font = Enum.Font.Ubuntu
+BeNeutral.Text = "Be Neutral"
+BeNeutral.TextColor3 = Color3.fromRGB(255, 255, 255)
+BeNeutral.TextScaled = true
+BeNeutral.TextSize = 14.000
+BeNeutral.TextWrapped = true
+BeNeutral.MouseButton1Down:connect(function()
+	Workspace.Remote.TeamEvent:FireServer("Medium stone grey")
+end)
+
+UICorner_9.Parent = BeNeutral
+
+InvGuns.Name = "InvGuns"
+InvGuns.Parent = CoolThings
+InvGuns.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+InvGuns.Position = UDim2.new(0.538152695, 0, 0.65389359, 0)
+InvGuns.Size = UDim2.new(0.461928934, 0, 0.123893805, 0)
+InvGuns.Font = Enum.Font.Ubuntu
+InvGuns.Text = "InvGuns"
+InvGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+InvGuns.TextScaled = true
+InvGuns.TextSize = 14.000
+InvGuns.TextWrapped = true
+InvGuns.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Players.LocalPlayer.Backpack:GetDescendants())do
+		if v.ClassName == "Model" then
+			v:Destroy()
+		end
+	end
+
+	game.Players.LocalPlayer.Backpack.M9.Part:Destroy()
+
+	game.Players.LocalPlayer.Backpack.M9.Part:Destroy()
+end)
+
+UICorner_10.Parent = InvGuns
+
+PlayerNameBox.Name = "PlayerNameBox"
+PlayerNameBox.Parent = CoolThings
+PlayerNameBox.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+PlayerNameBox.Position = UDim2.new(0.192893401, 0, 0.818584085, 0)
+PlayerNameBox.Size = UDim2.new(0.67005074, 0, 0.115044251, 0)
+PlayerNameBox.Font = Enum.Font.Ubuntu
+PlayerNameBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerNameBox.PlaceholderText = "Player Name"
+PlayerNameBox.Text = ""
+PlayerNameBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerNameBox.TextScaled = true
+PlayerNameBox.TextSize = 14.000
+PlayerNameBox.TextWrapped = true
+
+UICorner_11.Parent = PlayerNameBox
+
+Credits.Name = "Credits"
+Credits.Parent = TheUniverse
+Credits.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Credits.Position = UDim2.new(0.358230621, 0, 0.150970012, 0)
+Credits.Size = UDim2.new(0.601001561, 0, 0.71400243, 0)
+Credits.Visible = false
+
+TextLabel.Parent = Credits
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0011373607, 0, 0, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.123893805, 0)
+TextLabel.Font = Enum.Font.Ubuntu
+TextLabel.Text = "--Credits--"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+IDK.Name = "IDK"
+IDK.Parent = Credits
+IDK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IDK.BackgroundTransparency = 1.000
+IDK.Position = UDim2.new(0.156223059, 0, 0.154867262, 0)
+IDK.Size = UDim2.new(0.695431471, 0, 0.123893805, 0)
+IDK.Font = Enum.Font.Ubuntu
+IDK.Text = "Gui : HappyLight"
+IDK.TextColor3 = Color3.fromRGB(255, 255, 255)
+IDK.TextScaled = true
+IDK.TextSize = 14.000
+IDK.TextWrapped = true
+
+IDK2.Name = "IDK2"
+IDK2.Parent = Credits
+IDK2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IDK2.BackgroundTransparency = 1.000
+IDK2.Position = UDim2.new(0.151146919, 0, 0.278761059, 0)
+IDK2.Size = UDim2.new(0.695431471, 0, 0.123893805, 0)
+IDK2.Font = Enum.Font.Ubuntu
+IDK2.Text = "Scripted By : AquaticInferno"
+IDK2.TextColor3 = Color3.fromRGB(255, 255, 255)
+IDK2.TextScaled = true
+IDK2.TextSize = 14.000
+IDK2.TextWrapped = true
+
+IDK3.Name = "IDK3"
+IDK3.Parent = Credits
+IDK3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IDK3.BackgroundTransparency = 1.000
+IDK3.Position = UDim2.new(0.151146919, 0, 0.818584085, 0)
+IDK3.Size = UDim2.new(0.695431471, 0, 0.123893805, 0)
+IDK3.Font = Enum.Font.Ubuntu
+IDK3.Text = "Subscribe To Aquatic Inferno And HappyLight!"
+IDK3.TextColor3 = Color3.fromRGB(255, 255, 255)
+IDK3.TextScaled = true
+IDK3.TextSize = 14.000
+IDK3.TextWrapped = true
+
+IDK4.Name = "IDK4"
+IDK4.Parent = Credits
+IDK4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IDK4.BackgroundTransparency = 1.000
+IDK4.Position = UDim2.new(0.156223059, 0, 0.526548684, 0)
+IDK4.Size = UDim2.new(0.695431471, 0, 0.123893805, 0)
+IDK4.Font = Enum.Font.Ubuntu
+IDK4.Text = "Prison-Life"
+IDK4.TextColor3 = Color3.fromRGB(255, 255, 255)
+IDK4.TextScaled = true
+IDK4.TextSize = 14.000
+IDK4.TextWrapped = true
+
+Guns.Name = "Guns"
+Guns.Parent = TheUniverse
+Guns.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Guns.Position = UDim2.new(0.358230621, 0, 0.12885493, 0)
+Guns.Size = UDim2.new(0.62235713, 0, 0.802462816, 0)
+Guns.Visible = false
+
+GetAK47.Name = "GetAK-47"
+GetAK47.Parent = Guns
+GetAK47.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+GetAK47.Position = UDim2.new(0.0457669236, 0, 0.0255749896, 0)
+GetAK47.Size = UDim2.new(0.44607842, 0, 0.11023622, 0)
+GetAK47.Font = Enum.Font.Ubuntu
+GetAK47.Text = "Get AK-47"
+GetAK47.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetAK47.TextScaled = true
+GetAK47.TextSize = 14.000
+GetAK47.TextWrapped = true
+GetAK47.MouseButton1Down:connect(function()
+	if mousein == false then
+		local Weapon = {"AK-47"}
+		for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+			if v.Name == Weapon[1] then
+				local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+			end
+		end
+	end
+end)
+
+UICorner_12.Parent = GetAK47
+
+GetShotgun.Name = "GetShotgun"
+GetShotgun.Parent = Guns
+GetShotgun.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+GetShotgun.Position = UDim2.new(0.521257102, 0, 0.0255749896, 0)
+GetShotgun.Size = UDim2.new(0.44607842, 0, 0.11023622, 0)
+GetShotgun.Font = Enum.Font.Ubuntu
+GetShotgun.Text = "Get Shotgun"
+GetShotgun.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetShotgun.TextScaled = true
+GetShotgun.TextSize = 14.000
+GetShotgun.TextWrapped = true
+GetShotgun.MouseButton1Down:connect(function()
+	if mousein == false then
+		local Weapon = {"Remington 870"}
+		for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+			if v.Name == Weapon[1] then
+				local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+			end
+		end
+	end
+end)
+
+UICorner_13.Parent = GetShotgun
+
+GetM4A1.Name = "GetM4A1"
+GetM4A1.Parent = Guns
+GetM4A1.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+GetM4A1.Position = UDim2.new(0.0457669199, 0, 0.186992317, 0)
+GetM4A1.Size = UDim2.new(0.44607842, 0, 0.11023622, 0)
+GetM4A1.Font = Enum.Font.Ubuntu
+GetM4A1.Text = "Get M4A1"
+GetM4A1.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetM4A1.TextScaled = true
+GetM4A1.TextSize = 14.000
+GetM4A1.TextWrapped = true
+GetM4A1.MouseButton1Down:connect(function()
+	if mousein == false then
+		local Weapon = {"M4A1"}
+		for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+			if v.Name == Weapon[1] then
+				local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+			end
+		end
+	end
+end)
+
+UICorner_14.Parent = GetM4A1
+
+GetM9.Name = "GetM9"
+GetM9.Parent = Guns
+GetM9.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+GetM9.Position = UDim2.new(0.521257102, 0, 0.186992317, 0)
+GetM9.Size = UDim2.new(0.44607842, 0, 0.11023622, 0)
+GetM9.Font = Enum.Font.Ubuntu
+GetM9.Text = "Get M9"
+GetM9.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetM9.TextScaled = true
+GetM9.TextSize = 14.000
+GetM9.TextWrapped = true
+GetM9.MouseButton1Down:connect(function()
+	if mousein == false then
+		local Weapon = {"M9"}
+		for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+			if v.Name == Weapon[1] then
+				local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+			end
+		end
+	end
+end)
+
+UICorner_15.Parent = GetM9
+
+GetKnife.Name = "GetKnife"
+GetKnife.Parent = Guns
+GetKnife.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+GetKnife.Position = UDim2.new(0.0457669199, 0, 0.340535641, 0)
+GetKnife.Size = UDim2.new(0.44607842, 0, 0.11023622, 0)
+GetKnife.Font = Enum.Font.Ubuntu
+GetKnife.Text = "Get Knife"
+GetKnife.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetKnife.TextScaled = true
+GetKnife.TextSize = 14.000
+GetKnife.TextWrapped = true
+GetKnife.MouseButton1Down:connect(function()
+	for i,v in pairs(workspace.Prison_ITEMS.giver:GetChildren()) do
+
+		local lol = workspace.Remote.ItemHandler:InvokeServer(v.ITEMPICKUP)
+
+	end
+end)
+
+UICorner_16.Parent = GetKnife
+
+ListFrame.Name = "ListFrame"
+ListFrame.Parent = TheUniverse
+ListFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ListFrame.Position = UDim2.new(0.00811293535, 0, 0.00965811405, 0)
+ListFrame.Size = UDim2.new(0.35131374, 0, 0.967097223, 0)
+
+UICorner_17.Parent = ListFrame
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = TheUniverse
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+LocalPlayer.Position = UDim2.new(0.325392932, 0, 0.00965811405, 0)
+LocalPlayer.Size = UDim2.new(0.675584376, 0, 0.966746747, 0)
+
+UICorner_18.Parent = LocalPlayer
+
+NoclipE.Name = "Noclip (E)"
+NoclipE.Parent = LocalPlayer
+NoclipE.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+NoclipE.Position = UDim2.new(0.0503767617, 0, 0.146026835, 0)
+NoclipE.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+NoclipE.Font = Enum.Font.Ubuntu
+NoclipE.Text = "Noclip (E)"
+NoclipE.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipE.TextScaled = true
+NoclipE.TextSize = 14.000
+NoclipE.TextWrapped = true
+NoclipE.MouseButton1Down:Connect(function()
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "e" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	print('Loaded')
+	print('Press "E" to noclip')
+end)
+
+UICorner_19.Parent = NoclipE
+
+Infjump.Name = "Infjump"
+Infjump.Parent = LocalPlayer
+Infjump.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Infjump.Position = UDim2.new(0.531061053, 0, 0.146026835, 0)
+Infjump.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Infjump.Font = Enum.Font.Ubuntu
+Infjump.Text = "infjump"
+Infjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infjump.TextScaled = true
+Infjump.TextSize = 14.000
+Infjump.TextWrapped = true
+Infjump.MouseButton1Down:Connect(function()
+	-- Credits To Levi (Discord: Levi #4357)
+	-- Press F to toggle
+
+	_G.infinjump = true
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+				Humanoid:ChangeState("Seated")
+			end
+		end
+	end)
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		k = k:lower()
+		if k == "f" then
+			if _G.infinjump == true then
+				_G.infinjump = false
+			else
+				_G.infinjump = true
+			end
+		end
+	end)
+end)
+
+UICorner_20.Parent = Infjump
+
+Btools.Name = "Btools"
+Btools.Parent = LocalPlayer
+Btools.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Btools.Position = UDim2.new(0.0503767915, 0, 0.283281744, 0)
+Btools.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Btools.Font = Enum.Font.Ubuntu
+Btools.Text = "Btools (Client)"
+Btools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Btools.TextScaled = true
+Btools.TextSize = 14.000
+Btools.TextWrapped = true
+Btools.MouseButton1Down:connect(function()
+	local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool2 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool4 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	tool1.BinType = "Clone"
+	tool2.BinType = "GameTool"
+	tool3.BinType = "Hammer"
+	tool4.BinType = "Script"
+	tool5.BinType = "Grab"
+end)
+
+UICorner_21.Parent = Btools
+
+SuperPunch.Name = "SuperPunch"
+SuperPunch.Parent = LocalPlayer
+SuperPunch.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+SuperPunch.Position = UDim2.new(0.531061053, 0, 0.283281714, 0)
+SuperPunch.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+SuperPunch.Font = Enum.Font.Ubuntu
+SuperPunch.Text = "SuperPunch"
+SuperPunch.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperPunch.TextScaled = true
+SuperPunch.TextSize = 14.000
+SuperPunch.TextWrapped = true
+SuperPunch.MouseButton1Down:connect(function()
+	mainRemotes = game.ReplicatedStorage
+	meleeRemote = mainRemotes['meleeEvent']
+	mouse = game.Players.LocalPlayer:GetMouse()
+	punching = false
+	cooldown = false
+
+	function punch()
+		cooldown = true
+		local part = Instance.new("Part", game.Players.LocalPlayer.Character)
+		part.Transparency = 1
+		part.Size = Vector3.new(5, 2, 3)
+		part.CanCollide = false
+		local w1 = Instance.new("Weld", part)
+		w1.Part0 = game.Players.LocalPlayer.Character.Torso
+		w1.Part1 = part
+		w1.C1 = CFrame.new(0,0,2)
+		part.Touched:connect(function(hit)
+			if game.Players:FindFirstChild(hit.Parent.Name) then
+				local plr = game.Players:FindFirstChild(hit.Parent.Name)
+				if plr.Name ~= game.Players.LocalPlayer.Name then
+					part:Destroy()
+
+					for i = 1,100 do
+						meleeRemote:FireServer(plr)
+					end
+				end
+			end
+		end)
+
+		wait(1)
+		cooldown = false
+		part:Destroy()
+	end
+
+
+	mouse.KeyDown:connect(function(key)
+		if cooldown == false then
+			if key:lower() == "f" then
+
+				punch()
+
+			end
+		end
+	end)
+end)
+
+UICorner_22.Parent = SuperPunch
+
+GOD.Name = "GOD"
+GOD.Parent = LocalPlayer
+GOD.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+GOD.Position = UDim2.new(0.0503767915, 0, 0.407464743, 0)
+GOD.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+GOD.Font = Enum.Font.Ubuntu
+GOD.Text = "coming soon b"
+GOD.TextColor3 = Color3.fromRGB(255, 255, 255)
+GOD.TextScaled = true
+GOD.TextSize = 14.000
+GOD.TextWrapped = true
+
+
+UICorner_23.Parent = GOD
+
+ClickTP.Name = "ClickTP"
+ClickTP.Parent = LocalPlayer
+ClickTP.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ClickTP.Position = UDim2.new(0.531061053, 0, 0.407464743, 0)
+ClickTP.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+ClickTP.Font = Enum.Font.Ubuntu
+ClickTP.Text = "ClickTP"
+ClickTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickTP.TextScaled = true
+ClickTP.TextSize = 14.000
+ClickTP.TextWrapped = true
+ClickTP.MouseButton1Click:connect(function()
+	if ctpF == false then
+		ctpF = true
+		ClickTp.BackgroundColor3 = Color3.new(0, 0, 0)
+	else
+		ctpF = false
+		ClickTp.BackgroundColor3 = MainFrame.BackgroundColor3
+	end
+end)
+
+UICorner_24.Parent = ClickTP
+
+Soon.Name = "Soon"
+Soon.Parent = LocalPlayer
+Soon.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Soon.Position = UDim2.new(0.0503767915, 0, 0.538183689, 0)
+Soon.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Soon.Font = Enum.Font.Ubuntu
+Soon.Text = "Coming Soon :("
+Soon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon.TextScaled = true
+Soon.TextSize = 14.000
+Soon.TextWrapped = true
+
+UICorner_25.Parent = Soon
+
+Soon_2.Name = "Soon"
+Soon_2.Parent = LocalPlayer
+Soon_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Soon_2.Position = UDim2.new(0.531061053, 0, 0.538183689, 0)
+Soon_2.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Soon_2.Font = Enum.Font.Ubuntu
+Soon_2.Text = "Coming Soon :("
+Soon_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_2.TextScaled = true
+Soon_2.TextSize = 14.000
+Soon_2.TextWrapped = true
+
+UICorner_26.Parent = Soon_2
+
+Soon_3.Name = "Soon"
+Soon_3.Parent = LocalPlayer
+Soon_3.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Soon_3.Position = UDim2.new(0.531061053, 0, 0.662366688, 0)
+Soon_3.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Soon_3.Font = Enum.Font.Ubuntu
+Soon_3.Text = "Coming Soon :("
+Soon_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_3.TextScaled = true
+Soon_3.TextSize = 14.000
+Soon_3.TextWrapped = true
+
+UICorner_27.Parent = Soon_3
+
+Soon_4.Name = "Soon"
+Soon_4.Parent = LocalPlayer
+Soon_4.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Soon_4.Position = UDim2.new(0.0503767915, 0, 0.662366688, 0)
+Soon_4.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Soon_4.Font = Enum.Font.Ubuntu
+Soon_4.Text = "Coming Soon :("
+Soon_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_4.TextScaled = true
+Soon_4.TextSize = 14.000
+Soon_4.TextWrapped = true
+
+UICorner_28.Parent = Soon_4
+
+Soon_5.Name = "Soon"
+Soon_5.Parent = LocalPlayer
+Soon_5.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Soon_5.Position = UDim2.new(0.0503767915, 0, 0.796353638, 0)
+Soon_5.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Soon_5.Font = Enum.Font.Ubuntu
+Soon_5.Text = "Coming Soon :("
+Soon_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_5.TextScaled = true
+Soon_5.TextSize = 14.000
+Soon_5.TextWrapped = true
+
+UICorner_29.Parent = Soon_5
+
+Soon_6.Name = "Soon"
+Soon_6.Parent = LocalPlayer
+Soon_6.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Soon_6.Position = UDim2.new(0.531061053, 0, 0.796353638, 0)
+Soon_6.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+Soon_6.Font = Enum.Font.Ubuntu
+Soon_6.Text = "Coming Soon :("
+Soon_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon_6.TextScaled = true
+Soon_6.TextSize = 14.000
+Soon_6.TextWrapped = true
+
+UICorner_30.Parent = Soon_6
+
+ClickTP_2.Name = "ClickTP"
+ClickTP_2.Parent = LocalPlayer
+ClickTP_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ClickTP_2.Position = UDim2.new(0.531061053, 0, 0.407464743, 0)
+ClickTP_2.Size = UDim2.new(0.410933197, 0, 0.09150327, 0)
+ClickTP_2.Font = Enum.Font.Ubuntu
+ClickTP_2.Text = "soon :("
+ClickTP_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickTP_2.TextScaled = true
+ClickTP_2.TextSize = 14.000
+ClickTP_2.TextWrapped = true
+
+UICorner_31.Parent = ClickTP_2
+
+Visuals.Name = "Visuals"
+Visuals.Parent = TheUniverse
+Visuals.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Visuals.Position = UDim2.new(0.358230621, 0, 0.147810698, 0)
+Visuals.Size = UDim2.new(0.601001561, 0, 0.717161596, 0)
+Visuals.Visible = false
+
+ESP.Name = "ESP"
+ESP.Parent = Visuals
+ESP.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ESP.Position = UDim2.new(0.167594492, 0, 0.355971545, 0)
+ESP.Size = UDim2.new(0.65989846, 0, 0.11894273, 0)
+ESP.Font = Enum.Font.Ubuntu
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+ESP.MouseButton1Down:Connect(function()
+	local plr = game:GetService("Players").LocalPlayer
+	local teamcolor = true
+	local enemycolor = false
+	if enemycolor == true and teamcolor == true then
+		warn("Cannot do both, going to enemycolor instead.")
+	end
+	function update()
+		for _,v in next, game:GetService("Players"):GetPlayers() do
+			if v.Name ~= plr.Name and v.Team ~= plr.Team then
+				for _,b in next, v.Character:GetChildren() do
+					if b:IsA("Part") or b:IsA("MeshPart") then
+						if not b:FindFirstChild("BoxHandleAdornment") then
+							b.Transparency = 1
+							local box = Instance.new("BoxHandleAdornment",b)
+							box.AlwaysOnTop = true
+							box.Adornee = b
+							box.Size = b.Size
+							if enemycolor == true and teamcolor == true then
+								box.Color3 = Color3.new(1,0,0)
+							elseif teamcolor == true then
+								box.Color3 = v.TeamColor.Color
+							elseif enemycolor == true then
+								box.Color3 = Color3.new(1,0,0)
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	while wait() do
+		update()
+	end
+end)
+
+UICorner_32.Parent = ESP
+
+CoolThingsButton.Name = "CoolThingsButton"
+CoolThingsButton.Parent = TheUniverse
+CoolThingsButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+CoolThingsButton.BorderSizePixel = 0
+CoolThingsButton.Position = UDim2.new(0.0264174137, 0, 0.5585199, 0)
+CoolThingsButton.Size = UDim2.new(0.26541695, 0, 0.0884604752, 0)
+CoolThingsButton.Font = Enum.Font.Ubuntu
+CoolThingsButton.Text = "Cool Things"
+CoolThingsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CoolThingsButton.TextScaled = true
+CoolThingsButton.TextSize = 14.000
+CoolThingsButton.TextWrapped = true
+
+UICorner_33.Parent = CoolThingsButton
+
+CreditsButton.Name = "CreditsButton"
+CreditsButton.Parent = TheUniverse
+CreditsButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+CreditsButton.BorderSizePixel = 0
+CreditsButton.Position = UDim2.new(0.0264174137, 0, 0.688051522, 0)
+CreditsButton.Size = UDim2.new(0.26541695, 0, 0.0884604752, 0)
+CreditsButton.Font = Enum.Font.Ubuntu
+CreditsButton.Text = "CreditsButton"
+CreditsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditsButton.TextScaled = true
+CreditsButton.TextSize = 14.000
+CreditsButton.TextWrapped = true
+
+UICorner_34.Parent = CreditsButton
+
+GunsButton.Name = "GunsButton"
+GunsButton.Parent = TheUniverse
+GunsButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+GunsButton.BorderSizePixel = 0
+GunsButton.Position = UDim2.new(0.0264174137, 0, 0.280501366, 0)
+GunsButton.Size = UDim2.new(0.26541695, 0, 0.0916197747, 0)
+GunsButton.Font = Enum.Font.Ubuntu
+GunsButton.Text = "Guns"
+GunsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunsButton.TextScaled = true
+GunsButton.TextSize = 14.000
+GunsButton.TextWrapped = true
+
+UICorner_35.Parent = GunsButton
+
+LocalPlayerButton.Name = "LocalPlayerButton"
+LocalPlayerButton.Parent = TheUniverse
+LocalPlayerButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+LocalPlayerButton.BorderSizePixel = 0
+LocalPlayerButton.Position = UDim2.new(0.0264174137, 0, 0.150970012, 0)
+LocalPlayerButton.Size = UDim2.new(0.26541695, 0, 0.0884604752, 0)
+LocalPlayerButton.Font = Enum.Font.Ubuntu
+LocalPlayerButton.Text = "LocalPlayer"
+LocalPlayerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayerButton.TextScaled = true
+LocalPlayerButton.TextSize = 14.000
+LocalPlayerButton.TextWrapped = true
+
+UICorner_36.Parent = LocalPlayerButton
+
+VisualButton.Name = "VisualButton"
+VisualButton.Parent = TheUniverse
+VisualButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+VisualButton.BorderSizePixel = 0
+VisualButton.Position = UDim2.new(0.0264174137, 0, 0.422670037, 0)
+VisualButton.Size = UDim2.new(0.26541695, 0, 0.0884604752, 0)
+VisualButton.Font = Enum.Font.Ubuntu
+VisualButton.Text = "Visuals"
+VisualButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisualButton.TextScaled = true
+VisualButton.TextSize = 14.000
+VisualButton.TextWrapped = true
+
+UICorner_37.Parent = VisualButton
+
+TextLabel_2.Parent = TheUniverse
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_2.Position = UDim2.new(0.00811293535, 0, 0.00880127121, 0)
+TextLabel_2.Size = UDim2.new(0.495338291, 0, 0.120053485, 0)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Aquatic"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 18.000
+TextLabel_2.TextWrapped = true
+
+UICorner_38.Parent = TextLabel_2
+
+TextLabel_3.Parent = TextLabel_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextLabel_3.Position = UDim2.new(0.945644259, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(1.05877256, 0, 1, 0)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "PrisonLife"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 85, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 18.000
+TextLabel_3.TextWrapped = true
+
+UICorner_39.Parent = TextLabel_3
+
+DRAG.Name = "DRAG"
+DRAG.Parent = TheUniverse
+DRAG.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DRAG.Position = UDim2.new(0.0574733205, 0, -0.0360655747, 0)
+DRAG.Size = UDim2.new(0.879471481, 0, 0.0426229499, 0)
+
+-- Scripts:
+
+local function OMWU_fake_script() -- CoolThingsButton.LocalScript 
+	local script = Instance.new('LocalScript', CoolThingsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CoolThings.Visible = true
+		script.Parent.Parent.CoolThings.Visible = false
+		
+	end)
+end
+coroutine.wrap(OMWU_fake_script)()
+local function MSLCDS_fake_script() -- CreditsButton.LocalScript 
+	local script = Instance.new('LocalScript', CreditsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Credits.Visible = true
+		script.Parent.Parent.Credits.Visible = false
+	
+	end)
+end
+coroutine.wrap(MSLCDS_fake_script)()
+local function IBUY_fake_script() -- GunsButton.LocalScript 
+	local script = Instance.new('LocalScript', GunsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Guns.Visible = true
+		script.Parent.Parent.Guns.Visible = false
+	
+	end)
+end
+coroutine.wrap(IBUY_fake_script)()
+local function MYZJ_fake_script() -- LocalPlayerButton.LocalScript 
+	local script = Instance.new('LocalScript', LocalPlayerButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.LocalPlayer.Visible = true
+		script.Parent.Parent.LocalPlayer.Visible = true
+	
+	end)
+end
+coroutine.wrap(MYZJ_fake_script)()
+local function UPFOE_fake_script() -- VisualButton.LocalScript 
+	local script = Instance.new('LocalScript', VisualButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visuals.Visible = true
+		script.Parent.Parent.Visuals.Visible = false
+	
+	end)
+end
+coroutine.wrap(UPFOE_fake_script)()
+local function JIWZDTG_fake_script() -- DRAG.LocalScript 
+	local script = Instance.new('LocalScript', DRAG)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(JIWZDTG_fake_script)() 
